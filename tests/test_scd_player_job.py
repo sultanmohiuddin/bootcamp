@@ -1,5 +1,5 @@
 from chispa.dataframe_comparer import *
-from ..jobs.scd_player_job import do_player_scd_transformation
+from jobs.scd_player_job import do_player_scd_transformation
 from collections import namedtuple
 PlayerSeason = namedtuple("PlayerSeason", "player_name current_season scoring_class")
 PlayerScd = namedtuple("PlayerScd", "player_name scoring_class start_date end_date")
