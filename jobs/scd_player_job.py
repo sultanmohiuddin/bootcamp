@@ -27,7 +27,7 @@ WITH streak_started AS (
             player_name,
             scoring_class,
             streak_identifier,
-            MIN(current_season) AS start_date,
+            MIN(current_season)+1 AS start_date,
             MAX(current_season) AS end_date
          FROM streak_identified
          GROUP BY 1,2,3
